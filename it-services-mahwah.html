@@ -18,34 +18,7 @@
     }
     </script>
 
-    <style>
-        :root { --primary: #003366; --accent: #007bff; --dark: #111; --light: #f8f9fa; --text: #333; --white: #ffffff; --shadow: 0 4px 20px rgba(0,0,0,0.08); }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); background: var(--white); margin: 0; }
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        ul { list-style: none; padding: 0; margin: 0; }
-        .container { width: 92%; max-width: 1200px; margin: auto; padding: 0 15px; }
-        .section-padding { padding: 80px 0; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        .top-bar { background: var(--dark); color: #ccc; padding: 10px 0; font-size: 0.95rem; }
-        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
-        header { background: var(--white); box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 90px; }
-        .logo-link { display: flex; align-items: center; height: 100%; }
-        .logo-img { max-height: 60px; width: auto; display: block; }
-        .nav-menu { display: flex; gap: 30px; align-items: center; }
-        .nav-link { font-weight: 700; color: var(--primary) !important; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .nav-link:hover { color: var(--accent) !important; }
-        .hamburger { display: none; font-size: 1.8rem; cursor: pointer; color: var(--primary); }
-        .btn { display: inline-block; background: var(--accent); color: white !important; padding: 14px 35px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: none; cursor: pointer; }
-        .btn:hover { background: #0056b3; transform: translateY(-2px); }
-        .card { background: white; padding: 40px; border-radius: 10px; box-shadow: var(--shadow); border-top: 5px solid var(--accent); }
-        footer { background: var(--dark); color: #bbb; padding: 70px 0 30px; margin-top: auto; }
-        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-        footer h3 { color: white; margin-bottom: 25px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 10px; }
-        .copyright { text-align: center; margin-top: 60px; border-top: 1px solid #333; padding-top: 25px; font-size: 0.9rem; }
-        @media (max-width: 900px) { .hamburger { display: block; } .nav-menu { display: none; position: absolute; top: 90px; left: 0; width: 100%; background: white; flex-direction: column; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; } .nav-menu.active { display: flex; } .grid-2 { grid-template-columns: 1fr; } .top-bar { display: none; } .logo-img { max-height: 50px; } }
-    </style>
+    <style>:root { --primary: #003366; --accent: #007bff; --dark: #111; --light: #f8f9fa; --text: #333; --white: #ffffff; --shadow: 0 4px 20px rgba(0,0,0,0.08); } * { box-sizing: border-box; margin: 0; padding: 0; } body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.8; color: var(--text); background: var(--white); margin: 0; } a { text-decoration: none; color: inherit; transition: 0.3s; } ul { list-style: none; padding: 0; margin: 0; } .container { width: 92%; max-width: 1200px; margin: auto; padding: 0 15px; } .section-padding { padding: 80px 0; } .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; } .top-bar { background: var(--dark); color: #ccc; padding: 10px 0; font-size: 0.95rem; } .top-bar .container { display: flex; justify-content: space-between; align-items: center; } header { background: var(--white); box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; } .nav-container { display: flex; justify-content: space-between; align-items: center; height: 90px; } .logo-link { display: flex; align-items: center; height: 100%; } .logo-img { max-height: 60px; width: auto; display: block; } .nav-menu { display: flex; gap: 30px; align-items: center; } .nav-link { font-weight: 700; color: var(--primary) !important; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; position: relative; padding: 5px 0; } .nav-link:hover { color: var(--accent) !important; } .nav-link::after { content: ''; display: block; width: 0; height: 2px; background: var(--accent); transition: width .3s; position: absolute; bottom: 0; } .nav-link:hover::after { width: 100%; } .hamburger { display: none; font-size: 1.8rem; cursor: pointer; color: var(--primary); } .btn { display: inline-block; background: var(--accent); color: white !important; padding: 12px 30px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: none; cursor: pointer; transition: 0.3s; } .btn:hover { background: #0056b3; transform: translateY(-2px); } .card { background: white; padding: 40px; border-radius: 10px; box-shadow: var(--shadow); border-top: 5px solid var(--accent); height: 100%; transition: 0.3s; } footer { background: var(--dark); color: #bbb; padding: 70px 0 30px; margin-top: auto; } .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; } footer h3 { color: white; margin-bottom: 25px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 10px; } .copyright { text-align: center; margin-top: 60px; border-top: 1px solid #333; padding-top: 25px; font-size: 0.9rem; } @media (max-width: 900px) { .hamburger { display: block; } .nav-menu { display: none; position: absolute; top: 90px; left: 0; width: 100%; background: white; flex-direction: column; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; } .nav-menu.active { display: flex; } .grid-2 { grid-template-columns: 1fr; } .top-bar { display: none; } .logo-img { max-height: 50px; } }</style>
 </head>
 <body>
     <div class="top-bar"><div class="container"><span><i class="fas fa-map-marker-alt"></i> 12 W Main Street, Ramsey, NJ</span><span><i class="fas fa-phone-alt"></i> <a href="tel:2016693107" style="color:white;">201-669-3107</a></span></div></div>
@@ -65,18 +38,18 @@
                 <div class="grid-2">
                     <div>
                         <h2 style="color: var(--primary);">IT Support for Mahwah Business</h2>
-                        <p>Mahwah is the corporate engine of Bergen County. Whether your office is located on <strong>MacArthur Blvd</strong>, near the <strong>International Crossroads</strong>, or in the industrial parks off Route 17, you cannot afford downtime.</p>
-                        <p>Unlike IT companies based in NYC or Central Jersey, <strong>Bergen Computer Solutions is located just 5 minutes away in Ramsey.</strong> This means when your server crashes or your warehouse WiFi goes down, we can be on-site in minutes, not hours.</p>
+                        <p>Mahwah is the corporate engine of Bergen County. Whether your office is located on <strong>MacArthur Blvd</strong>, near the <strong>International Crossroads (Sheraton/Crossroads)</strong>, or in the industrial parks off Route 17, you cannot afford downtime. The logistics and corporate sectors here demand 99.9% uptime.</p>
+                        <p>Unlike IT companies based in NYC or Central Jersey, <strong>Bergen Computer Solutions is located just 5 minutes away in Ramsey.</strong> This means when your server crashes or your warehouse WiFi goes down, we can be on-site in minutes, not hours. We understand the specific needs of logistics companies using barcode scanners and ERP systems.</p>
                         <h3 style="margin-top:20px; font-size: 1.2rem;">We specialize in:</h3>
                         <ul style="margin-top:15px; line-height:2;">
-                            <li><i class="fas fa-check" style="color:var(--accent)"></i> <strong>Logistics & Warehouse IT:</strong> High-coverage WiFi for scanners.</li>
-                            <li><i class="fas fa-check" style="color:var(--accent)"></i> <strong>Corporate Office Support:</strong> Server management & patching.</li>
-                            <li><i class="fas fa-check" style="color:var(--accent)"></i> <strong>Fiber & Cabling:</strong> Structured wiring for new offices.</li>
+                            <li><i class="fas fa-check" style="color:var(--accent)"></i> <strong>Logistics & Warehouse IT:</strong> High-coverage WiFi for inventory scanners.</li>
+                            <li><i class="fas fa-check" style="color:var(--accent)"></i> <strong>Corporate Office Support:</strong> Server management & workstation patching.</li>
+                            <li><i class="fas fa-check" style="color:var(--accent)"></i> <strong>Fiber & Cabling:</strong> Structured wiring for new office move-ins.</li>
                         </ul>
                     </div>
                     <div class="card" style="background: #f8f9fa;">
                         <h3>Home Computer Repair?</h3>
-                        <p>We also serve Mahwah residents! Drop your computer off at our Main St, Ramsey shop just down the road via Franklin Turnpike.</p>
+                        <p>We also serve Mahwah residents! Mahwah is a large town, but help is close by. Drop your computer off at our Main St, Ramsey shop just down the road via Franklin Turnpike or Route 17.</p>
                         <hr style="border:0; border-top:1px solid #ddd; margin: 20px 0;">
                         <ul style="list-style: none; line-height: 2;">
                             <li><i class="fas fa-wrench" style="color:var(--accent)"></i> Laptop Screen Repair</li>
@@ -90,7 +63,6 @@
             </div>
         </section>
     </main>
-
     <footer><div class="container"><div class="grid-3"><div><h3>Bergen Computer Solutions</h3><p>IT Service Center.</p></div><div><h3>Quick Links</h3><ul><li><a href="managed-it.html">Business IT Services</a></li><li><a href="residential.html">Repairs</a></li><li><a href="blog.html">Blog</a></li></ul></div><div><h3>Contact Us</h3><p>12 W Main Street, Ramsey, NJ 07446</p><p><a href="tel:2016693107" style="color:white;">201-669-3107</a></p><p>Sat-Sun: Closed</p></div></div><div class="copyright">&copy; <span id="year"></span> Bergen Computer Solutions LLC.</div></div></footer>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
