@@ -4,42 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bergen Computer Solutions | IT Service Center Ramsey, NJ</title>
-    <meta name="description" content="Visit our IT Service Center at 12 W Main St, Ramsey NJ. We offer walk-in computer repairs and Managed Business IT Services. Call 201-669-3107.">
+    <meta name="description" content="Visit our IT Service Center at 12 W Main St, Ramsey NJ. We offer walk-in computer repairs and Managed Business IT Services. Trusted since 2009. Call 201-669-3107.">
     <link rel="canonical" href="https://www.bergencomputersolutions.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "ComputerStore", "name": "Bergen Computer Solutions LLC", "image": "https://www.bergencomputersolutions.com/BCSLOGO.jpg", "url": "https://www.bergencomputersolutions.com", "telephone": "+1-201-669-3107", "address": { "@type": "PostalAddress", "streetAddress": "12 W Main Street", "addressLocality": "Ramsey", "addressRegion": "NJ", "postalCode": "07446", "addressCountry": "US" }, "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" } ], "sameAs": ["https://www.facebook.com/bergencpu", "https://www.bbb.org/us/nj/ramsey/profile/computer-consultant/bergen-computer-solutions-0221-90162404"] } </script>
+    <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "ComputerStore", "name": "Bergen Computer Solutions LLC", "image": "https://www.bergencomputersolutions.com/BCSLOGO.jpg", "url": "https://www.bergencomputersolutions.com", "telephone": "+1-201-669-3107", "address": { "@type": "PostalAddress", "streetAddress": "12 W Main Street", "addressLocality": "Ramsey", "addressRegion": "NJ", "postalCode": "07446", "addressCountry": "US" }, "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" } ], "sameAs": ["https://www.facebook.com/bergencpu"] } </script>
 
     <style>
-        /* MASTER CSS */
+        /* MASTER CSS - COPIED TO ALL PAGES */
         :root { --primary: #003366; --accent: #007bff; --dark: #111; --light: #f8f9fa; --text: #333; --white: #ffffff; --shadow: 0 4px 20px rgba(0,0,0,0.08); }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.7; color: var(--text); background: var(--white); margin: 0; }
+        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.8; color: var(--text); background: var(--white); margin: 0; }
         a { text-decoration: none; color: inherit; transition: 0.3s; }
         ul { list-style: none; padding: 0; margin: 0; }
         .container { width: 92%; max-width: 1200px; margin: auto; padding: 0 15px; }
         .section-padding { padding: 80px 0; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        
+        /* HEADER & NAV - IMPROVED */
         .top-bar { background: var(--dark); color: #ccc; padding: 10px 0; font-size: 0.95rem; }
         .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
         header { background: var(--white); box-shadow: 0 2px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
         .nav-container { display: flex; justify-content: space-between; align-items: center; height: 90px; }
         .logo-link { display: flex; align-items: center; height: 100%; }
         .logo-img { max-height: 60px; width: auto; display: block; }
-        .nav-menu { display: flex; gap: 25px; align-items: center; }
-        .nav-link { font-weight: 700; color: var(--primary) !important; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
-        .nav-link:hover { color: var(--accent) !important; }
+        
+        .nav-menu { display: flex; gap: 30px; align-items: center; }
+        .nav-link { 
+            font-weight: 700; 
+            color: var(--primary); 
+            font-size: 0.95rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            position: relative;
+            padding: 5px 0;
+        }
+        .nav-link:hover { color: var(--accent); }
+        .nav-link::after { content: ''; display: block; width: 0; height: 2px; background: var(--accent); transition: width .3s; position: absolute; bottom: 0; }
+        .nav-link:hover::after { width: 100%; }
+
         .hamburger { display: none; font-size: 1.8rem; cursor: pointer; color: var(--primary); }
-        .btn { display: inline-block; background: var(--accent); color: white !important; padding: 14px 35px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: none; cursor: pointer; margin-right: 10px; }
+
+        /* BUTTONS */
+        .btn { display: inline-block; background: var(--accent); color: white !important; padding: 12px 30px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: none; cursor: pointer; transition: 0.3s; }
         .btn:hover { background: #0056b3; transform: translateY(-2px); }
         .btn-outline { border: 2px solid var(--primary); color: var(--primary) !important; padding: 10px 25px; border-radius: 6px; font-weight: 700; background: transparent; }
         .btn-outline:hover { background: var(--primary); color: white !important; }
+        
+        /* CARDS & FOOTER */
         .card { background: white; padding: 40px; border-radius: 10px; box-shadow: var(--shadow); border-top: 5px solid var(--accent); height: 100%; transition: 0.3s; }
         .card:hover { transform: translateY(-5px); }
         .card i { font-size: 3.5rem; color: var(--accent); margin-bottom: 25px; }
         footer { background: var(--dark); color: #bbb; padding: 70px 0 30px; margin-top: auto; }
         footer h3 { color: white; margin-bottom: 25px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 10px; }
         .copyright { text-align: center; margin-top: 60px; border-top: 1px solid #333; padding-top: 25px; font-size: 0.9rem; }
+
+        /* COUPON */
+        .coupon { border: 3px dashed var(--primary); background: #eef6ff; padding: 20px; text-align: center; border-radius: 10px; margin-top: 30px; }
+        .coupon h3 { color: var(--accent); margin-bottom: 5px; font-weight: 900; font-size: 1.8rem; }
+
+        /* MOBILE */
         @media (max-width: 900px) {
             .hamburger { display: block; }
             .nav-menu { display: none; position: absolute; top: 90px; left: 0; width: 100%; background: white; flex-direction: column; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
@@ -62,27 +86,38 @@
                 <div><a href="managed-it.html" class="btn">Business Services</a><a href="residential.html" class="btn" style="background: white; color: var(--primary) !important;">Home Services</a></div>
             </div>
         </section>
+        
         <section class="section-padding">
             <div class="container">
-                <div class="text-center" style="margin-bottom: 50px;"><h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 10px;">Our Expertise</h2><p>Comprehensive technology solutions for Business and Home.</p></div>
+                <div class="text-center" style="margin-bottom: 50px;"><h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 10px;">Comprehensive IT Solutions</h2><p style="font-size:1.2rem;">Serving Homeowners and Business Owners across Bergen County.</p></div>
                 <div class="grid-3">
-                    <div class="card text-center"><i class="fas fa-building"></i><h3 style="color: var(--primary);">Managed Business IT</h3><p>Proactive network monitoring, cyber security, and flat-rate support.</p><br><a href="managed-it.html" class="btn-outline">Business Solutions</a></div>
-                    <div class="card text-center"><i class="fas fa-tools"></i><h3 style="color: var(--primary);">IT Service Center</h3><p>Drop off your broken PC or Mac at our Main Street shop for fast repairs.</p><br><a href="residential.html" class="btn-outline">View Repairs</a></div>
-                    <div class="card text-center"><i class="fas fa-shield-alt"></i><h3 style="color: var(--primary);">Cyber Security</h3><p>Enterprise-grade protection against ransomware and phishing.</p><br><a href="cyber-security.html" class="btn-outline">Secure Your Data</a></div>
+                    <div class="card text-center"><i class="fas fa-building"></i><h3 style="color: var(--primary);">Managed Business IT</h3><p>We act as your outsourced IT department. From proactive network monitoring to vendor management, we keep your business running smoothly without the overhead of an in-house team.</p><br><a href="managed-it.html" class="btn-outline">Business Solutions</a></div>
+                    <div class="card text-center"><i class="fas fa-tools"></i><h3 style="color: var(--primary);">IT Service Center</h3><p>Drop off your broken PC or Mac at our Main Street service center. We handle screen replacements, data recovery, and virus removals with fast turnaround times.</p><br><a href="residential.html" class="btn-outline">View Repairs</a></div>
+                    <div class="card text-center"><i class="fas fa-shield-alt"></i><h3 style="color: var(--primary);">Cyber Security</h3><p>Ransomware is the #1 threat to small businesses. We implement enterprise-grade protection, EDR, and immutable backups to ensure your data is safe.</p><br><a href="cyber-security.html" class="btn-outline">Secure Your Data</a></div>
                 </div>
             </div>
         </section>
+
         <section class="section-padding" style="background: var(--light);">
             <div class="container">
                 <div class="grid-2">
-                    <div><h2 style="color: var(--primary); font-size: 2rem;">Why Bergen Computer Solutions?</h2><p>Since 2009, we have been the trusted technology partner for Ramsey and Bergen County.</p><ul style="font-size: 1.1rem; line-height: 2; list-style: none;"><li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>BBB Accredited Business</strong> (A+ Rating)</li><li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>15+ Years</strong> of Experience</li><li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>Walk-in Service Center</strong> on Main St.</li></ul></div>
+                    <div>
+                        <h2 style="color: var(--primary); font-size: 2rem;">Why Bergen Computer Solutions?</h2>
+                        <p>Since 2009, we have been the trusted technology partner for Ramsey and the surrounding towns. In an industry full of faceless "remote-only" support lines, we are proud to be your local neighbors.</p>
+                        <p>We believe in transparency. We don't speak in confusing techno-babble; we explain exactly what is wrong and how we will fix it.</p>
+                        <ul style="font-size: 1.1rem; line-height: 2; list-style: none; margin-top: 20px;">
+                            <li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>BBB Accredited Business</strong> (A+ Rating)</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>15+ Years</strong> of Experience</li>
+                            <li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>Walk-in Service Center</strong> on Main St.</li>
+                        </ul>
+                    </div>
                     <div class="text-center"><a href="https://www.bbb.org/us/nj/ramsey/profile/computer-consultant/bergen-computer-solutions-0221-90162404" target="_blank"><img src="https://seal-newjersey.bbb.org/seals/blue-seal-200-42-bbb-90162404.png" alt="BBB Seal"></a></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer><div class="container"><div class="grid-3"><div><h3>Bergen Computer Solutions</h3><p>IT Service Center & Business MSP.</p><p><a href="https://www.facebook.com/bergencpu" target="_blank" style="font-size: 2rem; color: #3b5998; background: white; padding: 0 10px; border-radius: 5px;"><i class="fab fa-facebook-square"></i></a></p></div><div><h3>Quick Links</h3><ul><li><a href="managed-it.html">Business IT Services</a></li><li><a href="cyber-security.html">Cyber Security</a></li><li><a href="residential.html">Computer Repair</a></li><li><a href="blog.html">Blog</a></li></ul></div><div><h3>Contact Us</h3><p>12 W Main Street, Ramsey, NJ 07446</p><p><a href="tel:2016693107" style="color:white;">201-669-3107</a></p><p>Sat-Sun: Closed</p></div></div><div class="copyright">&copy; <span id="year"></span> Bergen Computer Solutions LLC. All Rights Reserved.</div></div></footer>
+    <footer><div class="container"><div class="grid-3"><div><h3>Bergen Computer Solutions</h3><p>IT Service Center & Business MSP.</p><p><a href="https://www.facebook.com/bergencpu" target="_blank" style="font-size: 2rem; color: #3b5998; background: white; padding: 0 10px; border-radius: 5px;"><i class="fab fa-facebook-square"></i></a></p></div><div><h3>Quick Links</h3><ul><li><a href="managed-it.html">Business IT Services</a></li><li><a href="residential.html">Repairs</a></li><li><a href="blog.html">Blog</a></li></ul></div><div><h3>Contact Us</h3><p>12 W Main Street, Ramsey, NJ 07446</p><p><a href="tel:2016693107" style="color:white;">201-669-3107</a></p><p>Sat-Sun: Closed</p></div></div><div class="copyright">&copy; <span id="year"></span> Bergen Computer Solutions LLC.</div></div></footer>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 </html>
