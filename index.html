@@ -7,7 +7,7 @@
     <meta name="description" content="Visit our IT Service Center at 12 W Main St, Ramsey NJ. We offer walk-in computer repairs and Managed Business IT Services. Trusted since 2009. Call 201-669-3107.">
     <link rel="canonical" href="https://www.bergencomputersolutions.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "ComputerStore", "name": "Bergen Computer Solutions LLC", "image": "https://www.bergencomputersolutions.com/BCSLOGO.jpg", "url": "https://www.bergencomputersolutions.com", "telephone": "+1-201-669-3107", "address": { "@type": "PostalAddress", "streetAddress": "12 W Main Street", "addressLocality": "Ramsey", "addressRegion": "NJ", "postalCode": "07446", "addressCountry": "US" }, "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" } ], "sameAs": ["https://www.facebook.com/bergencpu"] } </script>
+    <script type="application/ld+json"> { "@context": "https://schema.org", "@type": "ComputerStore", "name": "Bergen Computer Solutions LLC", "image": "https://www.bergencomputersolutions.com/BCSLOGO.jpg", "url": "https://www.bergencomputersolutions.com", "telephone": "+1-201-669-3107", "address": { "@type": "PostalAddress", "streetAddress": "12 W Main Street", "addressLocality": "Ramsey", "addressRegion": "NJ", "postalCode": "07446", "addressCountry": "US" }, "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" } ], "sameAs": ["https://www.facebook.com/bergencpu", "https://www.bbb.org/us/nj/ramsey/profile/computer-consultant/bergen-computer-solutions-0221-90162404"] } </script>
 
     <style>
         /* MASTER CSS - COPIED TO ALL PAGES */
@@ -32,21 +32,21 @@
         .nav-menu { display: flex; gap: 30px; align-items: center; }
         .nav-link { 
             font-weight: 700; 
-            color: var(--primary); 
+            color: var(--primary) !important; /* FORCE COLOR */
             font-size: 0.95rem; 
             text-transform: uppercase; 
             letter-spacing: 1px;
             position: relative;
             padding: 5px 0;
         }
-        .nav-link:hover { color: var(--accent); }
+        .nav-link:hover { color: var(--accent) !important; }
         .nav-link::after { content: ''; display: block; width: 0; height: 2px; background: var(--accent); transition: width .3s; position: absolute; bottom: 0; }
         .nav-link:hover::after { width: 100%; }
 
         .hamburger { display: none; font-size: 1.8rem; cursor: pointer; color: var(--primary); }
 
         /* BUTTONS */
-        .btn { display: inline-block; background: var(--accent); color: white !important; padding: 12px 30px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: none; cursor: pointer; transition: 0.3s; }
+        .btn { display: inline-block; background: var(--accent); color: white !important; padding: 12px 30px; border-radius: 6px; font-weight: 700; text-transform: uppercase; border: none; cursor: pointer; transition: 0.3s; margin-right: 10px; }
         .btn:hover { background: #0056b3; transform: translateY(-2px); }
         .btn-outline { border: 2px solid var(--primary); color: var(--primary) !important; padding: 10px 25px; border-radius: 6px; font-weight: 700; background: transparent; }
         .btn-outline:hover { background: var(--primary); color: white !important; }
@@ -104,7 +104,7 @@
                     <div>
                         <h2 style="color: var(--primary); font-size: 2rem;">Why Bergen Computer Solutions?</h2>
                         <p>Since 2009, we have been the trusted technology partner for Ramsey and the surrounding towns. In an industry full of faceless "remote-only" support lines, we are proud to be your local neighbors.</p>
-                        <p>We believe in transparency. We don't speak in confusing techno-babble; we explain exactly what is wrong and how we will fix it.</p>
+                        <p>We believe in transparency. We don't speak in confusing techno-babble; we explain exactly what is wrong and how we will fix it. Whether you need a single laptop repaired or a full server migration for your law firm, we treat every job with the same level of urgency and care.</p>
                         <ul style="font-size: 1.1rem; line-height: 2; list-style: none; margin-top: 20px;">
                             <li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>BBB Accredited Business</strong> (A+ Rating)</li>
                             <li><i class="fas fa-check-circle" style="color: var(--accent);"></i> <strong>15+ Years</strong> of Experience</li>
@@ -117,7 +117,7 @@
         </section>
     </main>
 
-    <footer><div class="container"><div class="grid-3"><div><h3>Bergen Computer Solutions</h3><p>IT Service Center & Business MSP.</p><p><a href="https://www.facebook.com/bergencpu" target="_blank" style="font-size: 2rem; color: #3b5998; background: white; padding: 0 10px; border-radius: 5px;"><i class="fab fa-facebook-square"></i></a></p></div><div><h3>Quick Links</h3><ul><li><a href="managed-it.html">Business IT Services</a></li><li><a href="residential.html">Repairs</a></li><li><a href="blog.html">Blog</a></li></ul></div><div><h3>Contact Us</h3><p>12 W Main Street, Ramsey, NJ 07446</p><p><a href="tel:2016693107" style="color:white;">201-669-3107</a></p><p>Sat-Sun: Closed</p></div></div><div class="copyright">&copy; <span id="year"></span> Bergen Computer Solutions LLC.</div></div></footer>
+    <footer><div class="container"><div class="grid-3"><div><h3>Bergen Computer Solutions</h3><p>IT Service Center & Business MSP.</p><p><a href="https://www.facebook.com/bergencpu" target="_blank" style="font-size: 2rem; color: #3b5998; background: white; padding: 0 10px; border-radius: 5px;"><i class="fab fa-facebook-square"></i></a></p></div><div><h3>Quick Links</h3><ul><li><a href="managed-it.html">Business IT Services</a></li><li><a href="residential.html">Repairs</a></li><li><a href="blog.html">Blog</a></li></ul></div><div><h3>Contact Us</h3><p>12 W Main Street, Ramsey, NJ 07446</p><p><a href="tel:2016693107" style="color:white;">201-669-3107</a></p><p>Sat-Sun: Closed</p></div></div><div class="copyright">&copy; <span id="year"></span> Bergen Computer Solutions LLC. All Rights Reserved.</div></div></footer>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 </html>
